@@ -1,0 +1,61 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../MuseumsinIndia.css">
+</head>
+<body class="home" background = "../images/home.jpg" >
+	<div id="top">
+	
+				<table width="1100">
+				<tr>
+				<td><img src="../images/logo.jpg" alt="Feather Logo" id="logo" width="90px" style="border-radius: 50%;"><td>
+				<td style="font-family:Algerian; font-size: 16px;font-style: normal;"><h1><center>NIZAM MUSEUM<br>Telangana</br></center> </h1></td>
+				</tr>
+				</table>
+				
+				
+			</div> <!-- end #logo-area -->
+			<div id="menu">
+				
+					<ul id="nav">
+
+  <li><a href="../MuseumsinIndia.html">Home</a></li>
+  <li><a  href="../about/nijammuseum.html">About</a></li>
+  <li><a class="active" href="nmcollections.html">Collections</a></li>
+  <li><a href="../visiting/nmvisiting.html">Visiting</a></li>
+</ul>
+</div>
+<center>
+<h2 class="w3-center">Gallery</h2>
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="../images/nijam1.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam2.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam3.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam4.jpg" height="350" width="550">
+    <img class="mySlides" src="../images/nijam5.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam6.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam7.jpg" height="350" width="550">
+  <img class="mySlides" src="../images/nijam8.jpg" height="350" width="550">
+
+
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
